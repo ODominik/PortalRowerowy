@@ -1,0 +1,209 @@
+.header-section {
+    .description.description--small {
+        max-width: 600px;
+    }
+}
+
+.section-project {
+    padding: 30px 0 40px;
+
+    @media (min-width: $xle-more) {
+        padding-top: 84px;
+    }
+
+    &__content {
+        margin-top: 35px;
+
+        @media (min-width: $xl) {
+            max-width: 540px;
+
+            .heading {
+                display: block;
+                font-size: 2.5rem;
+                font-weight: 500;
+                margin: 0 0 20px;
+            }
+        }
+
+        .text-link {
+            @media (min-width: $xl) {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .add-margin {
+        @media (min-width: $xle-more) {
+            margin-left: 80px;
+        }
+    }
+
+    &__img {
+        margin-top: 30px;
+
+        @media (min-width: $md) {
+            margin-top: 50px;
+        }
+
+        @media (min-width: $lg) {
+            margin-top: 70px;
+        }
+
+        @media (min-width: $xl) {
+            text-align: left !important;
+        }
+    }
+
+    &__img.section-project__img--top {
+        margin-top: 0;
+
+        @media (min-width: $xl) {
+            text-align: right;
+        }
+    }
+
+    .txt {
+        //margin-top: 30px;
+        max-width: 600px;
+        margin: 30px auto;
+
+        @media (min-width: $md) {
+            margin-top: 50px;
+        }
+
+        @media (min-width: $xle-more) {
+            margin-top: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+
+            @media (min-width: $xl) {
+                margin-bottom: 34px;
+            }
+        }
+
+        .btn-outline {
+            margin-top: 15px;
+
+            @media (min-width: $xl) {
+                margin-top: 45px;
+            }
+        }
+    }
+
+    .content-row {
+        @media (min-width: $xl) {
+            margin-bottom: 50px;
+            align-items: center;
+        }
+
+        @media (min-width: $xle-more) {
+            margin-bottom: 144px;
+        }
+    }
+}
+
+.add-xl-padding-l {
+    @media (min-width: $xl) {
+        padding-left: 50px;
+    }
+
+    @media (min-width: $xle-more) {
+        padding-left: 185px;
+    }
+}
+
+.add-xl-padding-r {
+    @media (min-width: $xl) {
+        padding-right: 50px;
+    }
+
+    @media (min-width: $xle-more) {
+        padding-right: 0px;
+        padding-left: 134px;
+    }
+}
+
+.add-hd-padding-l {
+    @media (min-width: $xle-more) {
+        padding-right: 78px;
+        padding-left: 110px;
+    }
+}
+.section-project--secondary-header{
+	
+		    @media (max-width: $sm) {
+		margin-bottom: 13px;
+	}
+	
+}
+.section-project.section-project--secondary {
+
+	padding-top: 0;
+    @media (min-width: $xle-more) {
+        padding-top: 36px;
+    }
+ .content-row {
+      
+
+        @media (min-width: $xle-more) {
+            margin-bottom: 123px;
+        }
+    }
+    .add-xl-padding-r {
+        @media (min-width: $xle-more) {
+            padding-left: 111px;
+        }
+    }
+     .add-xl-padding-l {
+        @media (min-width: $xl) {
+               padding-left: 56px;
+    padding-right: 50px;
+        }
+    }
+  .add-xl-padding-r-2 {
+        @media (min-width: $xle-more) {
+            padding-left: 56px;
+        }
+    }
+    .add-hd-padding-l-2 {
+    @media (min-width: $xle-more) {
+      padding-right: 78px;
+    padding-left: 59px;
+    }
+}
+    .margin-l {
+        @media (min-width: $xle-more) {
+            margin-left: 132px;
+        }
+    }
+   /*  .margin-l-2 {
+       @media (min-width: $xle-more) {
+           margin-left: 190px;
+       }
+   } */
+    .pd-l-add{
+    	 @media (min-width: $xle-more) {
+            padding-left: 158px;
+        }
+    }
+     .pd-r-add{
+    	 @media (min-width: $xle-more) {
+            padding-right: 204px;
+    padding-left: 28px;
+
+        }
+    }
+    .other-pd-l{
+    	 @media (min-width: $xle-more) {
+    	    padding-left: 54px;
+    	}
+    }
+    .other-pd-r{
+    	 @media (min-width: $xle-more) {
+    	       padding-right: 136px;
+    padding-left: 85px;
+    	}
+    }
+}

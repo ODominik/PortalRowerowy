@@ -1,0 +1,149 @@
+.pagination {
+    display: inline-block;
+    text-align: center;
+margin: 30px 0 33px;
+border:solid 1px #707070;
+border-raidus:6px;
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+
+        li {
+           display: inline-flex;
+    align-items: center;
+    justify-content:center;
+            font-size: 1.6rem;
+            font-weight: normal;
+            margin: 0;
+            border-right:solid 1px #707070;
+
+            a {
+                font-size: 1.6rem;
+                font-weight: normal;
+                display: block;
+                width: 35px;
+            }
+
+            span {
+                position: relative;
+                 display: inline-flex;
+    align-items: center;
+    justify-content:center;
+                font-size: 1.6rem;
+                font-weight: normal;
+                z-index: 5;
+                color: #fff;
+                 width: 35px;
+              height: 38px;
+           
+              background: $native-tertiary-color;
+              line-height: 32px;
+              text-align: center;
+            }
+
+          /*   span:before {
+              content: "";
+              position: absolute;
+              width: 32px;
+              height: 32px;
+              border-radius: 50%;
+              background: $native-tertiary-color;
+              line-height: 32px;
+              text-align: center;
+              display: inline-block;
+              z-index: -1;
+              left: -11px;
+              top: -4px;
+          } */
+        }
+        li:last-of-type{
+          border-right:0;
+        }
+
+        .dots{
+          width: 32px;
+        }
+
+        .text-prev,
+        .text-next {
+            position: relative;
+            height: 12px;
+
+  @media (min-width: $lg) {
+  	height: auto;
+  }
+            a {
+                display: none;
+                font-size: 1.6rem;
+                font-weight: normal;
+                width: auto;
+                color:$native-tertiary-color;
+                 @media (min-width: $lg) {
+                 	 display: block;
+                 }
+            }
+        }
+
+        .text-prev {
+            padding-left: 5px;
+            margin-right: 25px;
+             @media (min-width: $lg) {
+                 	 padding-left: 20px;
+                 }
+        }
+
+        .text-next {
+            padding-right: 5px;
+            margin-left: 10px;
+               width: 32px;
+             @media (min-width: $lg) {
+                 	 padding-right: 24px;
+                   width: auto;
+                 }
+        }
+
+        .text-next:after {
+            content: "\71";
+            font-size: 0.8rem;
+         font-family: "portalrowerowy" !important;
+            color: $native-tertiary-color;
+            display: inline-block;
+            position: absolute;
+            margin-left: 15px;
+              right: 17px;
+    margin-top: 12px;
+
+            @include vertical-center;
+  @media (min-width: $lg) {
+
+       right: 13px;
+    margin-top: 1px;
+               
+  }
+        }
+
+        .text-prev:before {
+            content: "\62";
+            font-size: 1rem;
+            font-family: "bsnamyslow" !important;
+            color: $native-tertiary-color;
+            display: inline-block;
+            position: absolute;
+            margin-right: 15px;
+            left: 0;
+
+            @include vertical-center;
+        }
+    }
+}
+
+.add-margin{
+	   @media (min-width: $lg) {
+	margin: 40px 0;
+}
+  @media (min-width: $xle) {
+  	margin: 70px 0 20px;
+  }
+}

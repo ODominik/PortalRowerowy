@@ -1,0 +1,438 @@
+.section-map-route--sub {
+    top: 0;
+
+    #map-route {
+        @media (min-width: $md) {
+            height: 462px;
+        }
+
+        @media (min-width: $lg) {
+            height: 562px;
+        }
+
+        @media (min-width: $xle) {
+            height: 700px;
+        }
+
+        @media (min-width: $xle-hd) {
+            height: 997px;
+        }
+    }
+
+    /*    .map-size{
+    	 @media (min-width: $md) {
+            height: 462px;
+        }
+    } */
+    .map-infoWindow--placeholders {
+        display: none;
+         @media (min-width: $xle-hd) {
+             display: block;
+             left:800px;
+        }
+    }
+}
+
+.map-route-markers {
+    background: #fff;
+
+    @media (min-width: $sm) {
+        margin-top: 66px;
+    }
+
+    @media (min-width: $md) {
+        position: absolute;
+        top: -55px;
+        left: 64px;
+        z-index: 2;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        width: 273px;
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    @media (min-width: $xle) {
+        width: 452px;
+        max-height: 500px;
+        top: 19px;
+        left: 77px;
+    }
+
+    @media (min-width: $xle-hd) {
+        max-height: 700px;
+        left: 180px;
+        top: 45px;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            padding: 18px 20px;
+            border-bottom: 1px solid #e0e0e0;
+            position: relative;
+
+            //    display: flex;
+            // align-items: center;
+            padding-left: 80px;
+            overflow: hidden;
+
+            .icon-content {
+                position: absolute;
+                left: 21px;
+                top: 17px;
+                display: flex;
+                justify-content: center;
+
+                @media (min-width: $xle) {
+                    left: 27px;
+                    top: 24px;
+                }
+
+                .icon {
+                    color: #ccc;
+                    font-size: 3.6rem;
+
+                    @media (min-width: $xle) {
+                        font-size: 4rem;
+                    }
+                }
+
+                .units {
+                    position: absolute;
+                    z-index: 1;
+                    color: #fff;
+                    font-size: 1.3rem;
+                    top: 3px;
+
+                    @media (min-width: $lg) {
+                        top: 8px;
+                    }
+                }
+            }
+
+            .route-details.map-infoWindow {
+                position: relative;
+                top: auto;
+                left: auto;
+                box-shadow: none;
+                float: left;
+                padding-left: 0;
+
+                .txt {
+                    font-size: 1.6rem;
+                }
+
+                .icon {
+                    margin-bottom: 12px;
+                }
+            }
+
+            .btn-fill {
+                min-height: 39px;
+                margin-top: 12px;
+                padding: 0 25px;
+            }
+
+            .title {
+                font-size: 2rem;
+                margin-bottom: 12px;
+                display: block;
+                font-weight: 500;
+
+                @media (min-width: $md) {
+                    font-size: 1.6rem;
+                    margin-bottom: 0;
+                }
+
+                @media (min-width: $xle) {
+                    font-size: 2rem;
+                }
+            }
+
+            .route-details.map-infoWindow:after {
+                display: none;
+            }
+        }
+    }
+}
+
+/* Card Route*/
+
+.route-features {
+    margin: 15px auto 30px;
+    display: block;
+    text-align: left;
+
+    @media (min-width: $lg) {
+        display: inline-flex;
+    }
+
+    @media (min-width: $md) {
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: $xle) {
+        margin-bottom: 113px;
+    }
+
+    &__icons {
+        display: block;
+     //   width: 100%;
+
+        @media (min-width: 460px) {
+            display: flex;
+        }
+
+        .content-item {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0px 0;
+            margin-right: 0px;
+            width: 100%;
+            text-align: center;
+
+            @media (min-width: 460px) {
+                display: block;
+                padding: 0px 27px 0 0;
+                margin-right: 28px;
+                text-align: left;
+                width: auto;
+                 border-right: 1px solid #ccc;
+            }
+ 
+            .icon {
+                display: block;
+                line-height: 1rem;
+                font-size: 2.3rem;
+                margin-bottom: 13px;
+            }
+
+            .txt {
+                display: block;
+                font-size: 1.8rem;
+                font-weight: normal;
+                line-height: 1.2rem;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 1.3rem;
+                color: #86898b;
+                margin: 12px 0 0;
+            }
+        }
+
+        .content-item:last-of-type {
+            border-right: 0;
+
+           
+        }
+    }
+
+    &__btn {
+        //  margin-left: 30px;
+        margin-top: 25px;
+
+        @media (min-width: $lg) {
+            margin-top: 15px;
+        }
+
+        .btn-fill {
+            margin-right: 0;
+            width: 100%;
+
+            @media (min-width: 460px) {
+                width: auto;
+                margin-right: 15px;
+            }
+        }
+
+        .btn-outline--socials {
+            width: 100%;
+            margin-top: 10px;
+
+            @media (min-width: 460px) {
+                width: auto;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.map-route-course {
+    background: #fff;
+    padding: 26px 26px 0;
+    width: 100%;
+    z-index: 2;
+    margin-bottom: 30px;
+
+    @media (min-width: $lg) {
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        position: absolute;
+        top: 36px;
+        left: 50px;
+        width: 419px;
+        margin-bottom: 0;
+    }
+
+    @media (min-width: $xl) {
+        top: 50px;
+        left: 50px;
+    }
+
+    @media (min-width: $xle-more) {
+        top: 150px;
+        left: 200px;
+    }
+
+    .title {
+        display: block;
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 15px;
+
+        @media (min-width: $sm) {
+            margin-bottom: 36px;
+            text-align: left;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .first-ico {
+            .icon {
+                color: #083283;
+            }
+        }
+
+        .last-ico {
+            .icon {
+                color: #aa3b3f;
+            }
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            padding: 8px 25px;
+            border-bottom: 1px solid #eee;
+            min-height: 61px;
+            margin: 0 -25px;
+            cursor: pointer;
+
+            .icon {
+                display: inline-flex;
+                color: #279237;
+                font-size: 2.6rem;
+                position: relative;
+                justify-content: center;
+
+                .units {
+                    position: absolute;
+                    font-size: 0.8rem;
+                    color: #fff;
+                    top: -2px;
+                    margin-left: -4px;
+                    @include  left-center;
+
+                    @media (min-width: $lg) {
+                        top: 4px;
+                    }
+                }
+            }
+
+            .txt {
+                display: inline-block;
+                font-size: 1.6rem;
+                margin-left: 27px;
+            }
+
+            &:hover,
+            &:focus {
+                background: #e7f4e9;
+            }
+        }
+
+        .current {
+            background: #e7f4e9;
+        }
+
+        li:last-of-type {
+            border-bottom: 0;
+        }
+    }
+}
+
+/* section cards */
+
+.section-cards.section-cards--route {
+    padding: 26px 0 20px;
+
+    @media (min-width: $xl) {
+        padding: 40px 0 20px;
+    }
+
+    @media (min-width: $xle-hd) {
+        padding: 74px 0 86px;
+    }
+
+    .header-section {
+        text-align: center;
+
+        @media (min-width: $xle-hd) {
+            margin-bottom: 50px;
+        }
+
+        .primary-heading {
+            text-align: center;
+
+            @media (min-width: $lg) {
+                text-align: left;
+            }
+        }
+    }
+
+    .card-items {
+        .label {
+            background: $native-tertiary-color;
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            color: #fff;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            min-width: 46px;
+            height: 46px;
+            z-index: 1;
+        }
+    }
+}
+
+.comments {
+    padding: 30px 0 22px;
+
+    @media (min-width: $md) {
+        padding-bottom: 40px;
+    }
+
+    @media (min-width: $xle-hd) {
+        padding: 60px 0 98px;
+    }
+
+    .header-section {
+        .primary-heading {
+            text-align: center;
+        }
+    }
+}

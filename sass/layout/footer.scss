@@ -1,0 +1,165 @@
+.footer-main {
+    background: #2e3031;
+    padding: 30px 0 15px;
+
+    @media (min-width: $lg) {
+        padding: 45px 0 25px;
+    }
+
+    @media (min-width: $xle-container) {
+        padding: 84px 0 63px;
+    }
+
+    &__nav {
+        &__heading {
+            color: #fff;
+            margin: 0 0 10px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 1px solid #525354;
+            padding: 0 0 9px;
+            position: relative;
+
+            @media (min-width: $md) {
+                pointer-events: none;
+                border: 0;
+                padding: 0;
+            }
+        }
+
+        &__heading::after {
+            content: "\71";
+            font-family: "portalrowerowy" !important;
+            color: #fff;
+            font-size: 0.8rem;
+            position: absolute;
+            display: inline-block;
+            right: 8px;
+            top: 1px;
+            transform: rotate(90deg);
+            text-transform: initial;
+            transition: all 150ms ease-in-out;
+
+            @media (min-width: $md) {
+                display: none;
+            }
+        }
+
+        &__heading.active::after {
+            transform: rotate(-90deg);
+        }
+
+        &__heading.active {
+            text-decoration: underline;
+        }
+
+        &__list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 15px;
+            display: none;
+
+            @media (min-width: $md) {
+                display: block !important;
+            }
+
+            li {
+                display: block;
+
+                a {
+                    color: #fff;
+                    font-size: 1.4rem;
+                    margin-bottom: 5px;
+                    font-weight: normal;
+
+                    @media (min-width: $lg) {
+                        font-size: 1.3rem;
+                    }
+
+                    @media (min-width: $xl) {
+                        font-size: 1.4rem;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    &__logo {
+        margin-top: 30px;
+
+        img {
+            @media (min-width: $md) {
+                width: 300px;
+                float: right;
+            }
+
+            @media (min-width: $lg) {
+                width: 288px;
+            }
+
+            @media (min-width: $xle) {
+                width: 416px;
+            }
+
+            @media (min-width: $xle-container) {
+                width: 616px;
+            }
+        }
+    }
+
+    &__copyrights {
+        //margin-top: 15px;
+        text-align: center;
+
+        @media (min-width: $lg) {
+            margin-top: 16px;
+        }
+
+        .line-styles {
+            border-top: 1px solid #ededed;
+            opacity: 0.14;
+            margin: 15px 0;
+
+            @media (min-width: $lg) {
+                margin: 24px 0;
+            }
+
+            @media (min-width: $xle-container) {
+                margin: 44px 0 56px;
+            }
+        }
+
+        .copyrights,
+        .authors {
+            color: #fff;
+            font-size: 1.2rem;
+            display: block;
+            line-height: 1.8rem;
+
+            @media (min-width: $sm) {
+                text-align: left;
+            }
+
+            a {
+                color: #fff;
+
+                &:hover,
+                &:focus {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .authors {
+            @media (min-width: $sm) {
+                text-align: right;
+            }
+        }
+    }
+}

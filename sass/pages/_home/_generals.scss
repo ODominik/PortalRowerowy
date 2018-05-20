@@ -1,0 +1,493 @@
+.section-map-route {
+    position: relative;
+    top: -5px;
+
+    @media (min-width: $xle-hd) {
+        margin-top: -65px;
+    }
+
+    .map-route-label {
+        background: #fff;
+        padding: 10px 20px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (min-width: $md) {
+            display: inline-flex;
+            padding: 20px 43px;
+            position: absolute;
+            top: 25px;
+            left: 69px;
+            z-index: 2;
+        }
+
+        @media (min-width: $lg) {
+            margin-top: 42px;
+        }
+
+        img {
+            width: 40px;
+        }
+
+        span {
+            display: inline-block;
+            color: $native-tertiary-color;
+            font-size: 2rem;
+            font-weight: 500;
+            margin-left: 15px;
+
+            @media (min-width: $md) {
+                font-size: 2.5rem;
+                margin-left: 20px;
+            }
+        }
+    }
+
+    #map-route {
+        height: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media (min-width: $sm) {
+            height: 300px;
+        }
+
+        @media (min-width: $md) {
+            height: 400px;
+        }
+
+        @media (min-width: $lg) {
+            height: 500px;
+        }
+
+        @media (min-width: $xle-more) {
+            height: 711px;
+        }
+
+        @media (min-width: $xle-hd) {
+            height: 911px;
+        }
+    }
+}
+
+.section-place {
+    padding: 30px 0;
+    overflow: hidden;
+
+    @media (min-width: $md) {
+        padding: 50px 0 30px;
+    }
+
+    @media (min-width: $xle-hd) {
+        padding: 120px 0 109px;
+    }
+
+    .header-section {
+        @media (min-width: $sm) {
+            .btn-outline {
+                margin-top: 0;
+                display: inline-flex !important;
+            }
+
+            .primary-heading {
+                text-align: left;
+                padding-right: 6px;
+            }
+        }
+    }
+
+    .content-btn {
+        @media (min-width: $lg) {
+            clear: both;
+        }
+    }
+}
+
+.item-place {
+    margin-bottom: 30px;
+
+    @media (min-width: $lg) {
+        width: 40%;
+        float: left;
+    }
+
+    figure {
+        position: relative;
+        height: 200px;
+        margin-bottom: 20px;
+
+        @media (min-width: $xs) {
+            height: 260px;
+        }
+
+        @media (min-width: $xs) {
+            height: 300px;
+        }
+
+        @media (min-width: $md) {
+            height: 350px;
+        }
+    }
+
+    &__description {
+        @media (min-width: $xs) {
+            background: #fff;
+            z-index: 1;
+            position: relative;
+            margin-top: -98px;
+            left: 50px;
+            width: calc(100% - 50px);
+            padding: 6px 20px;
+        }
+
+        @media (min-width: $sm) {
+            padding: 15px 34px;
+        }
+
+        @media (min-width: $md) {
+            padding: 34px 59px;
+            margin-top: -144px;
+            left: 133px;
+            width: calc(100% - 133px);
+        }
+
+        @media (min-width: $lg) {
+            margin-top: -150px;
+            left: 50px;
+            width: calc(100% - 50px);
+            padding: 28px 45px;
+        }
+
+        @media (min-width: $xle-more) {
+            padding: 46px 67px;
+            margin-top: -155px;
+        }
+
+        .secondary-heading {
+            position: relative;
+
+            @media (min-width: $lg) {
+                font-size: 2rem;
+                line-height: 2.4rem;
+            }
+
+            @media (min-width: $xle-container) {
+                font-size: 2.5rem;
+                line-height: 3.2rem;
+            }
+
+            small {
+                display: block;
+                font-size: 1.4rem;
+                margin-top: 6px;
+
+                @media (min-width: $md) {
+                    font-size: 1.6rem;
+                    line-height: 2rem;
+                }
+
+                @media (min-width: $lg) {
+                    margin-top: 9px;
+                }
+            }
+        }
+
+        .secondary-heading::after {
+            content: "";
+            background: #dddddd;
+            width: 56px;
+            height: 2px;
+            display: block;
+            margin-top: 8px;
+
+            @media (min-width: $xle-container) {
+                margin-top: 22px;
+                margin-bottom: 21px;
+            }
+        }
+
+        .txt {
+            @media (min-width: $md) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.item-place--1 {
+    @media (min-width: $xle-more) {
+        width: 46%;
+
+        figure {
+            height: 467px;
+        }
+    }
+
+    .item-place__description {
+        @media (min-width: $xle-more) {
+            width: calc(100% - 236px);
+            left: 236px;
+        }
+    }
+}
+
+.item-place--2 {
+    @media (min-width: $lg) {
+        float: right;
+        margin-top: 90px;
+    }
+
+    @media (min-width: $xle-more) {
+        width: 38%;
+        margin-top: 179px;
+    }
+
+    .item-place__description {
+        @media (min-width: $lg) {
+            left: auto;
+        }
+
+        @media (min-width: $xle-more) {
+            left: -74px;
+            margin-top: -91px;
+            width: calc(100% - 90px);
+        }
+    }
+
+    figure {
+        @media (min-width: $xle-more) {
+            height: 397px;
+        }
+    }
+}
+
+.item-place--3 {
+    @media (min-width: $lg) {
+        width: 50%;
+        margin-top: 80px;
+        margin: 30px auto 57px;
+    }
+
+    @media (min-width: $xle-more) {
+        width: 38%;
+        margin-top: 73px;
+        margin-left: 216px;
+        width: 33%;
+    }
+
+    .item-place__description {
+        @media (min-width: $lg) {
+            padding: 28px 45px;
+            left: 316px;
+            width: 100%;
+        }
+
+        @media (min-width: $xle-more) {
+            padding: 85px 78px;
+            left: 377px;
+            width: 118%;
+            margin-top: -214px;
+
+            .secondary-heading {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+.item-place--4 {
+    @media (min-width: $lg) {
+        float: left;
+        clear: both;
+    }
+
+    @media (min-width: $xle-more) {
+        margin-top: -184px;
+        width: 31%;
+        margin-left: 21px;
+
+        figure {
+            height: 348px;
+        }
+    }
+
+    .item-place__description {
+        @media (min-width: $xle-more) {
+            left: 158px;
+            margin-top: -135px;
+        }
+    }
+}
+
+.item-place--5 {
+    @media (min-width: $lg) {
+        float: right;
+        margin-top: -38px;
+
+        figure {
+            height: 450px;
+        }
+    }
+
+    @media (min-width: $xle) {
+        width: 35%;
+    }
+ @media (min-width: $xle-container) {
+    	  width: 26%;
+    }
+    @media (min-width: $xle-more) {
+        width: 19%;
+        float: right;
+        margin-top: -191px;
+
+        figure {
+            height: 461px;
+        }
+    }
+
+    .item-place__description {
+        @media (min-width: $lg) {
+            left: auto;
+        }
+    @media (min-width: $xle-container) {
+    	left: -179px;
+    	width: 120%;
+    }
+        @media (min-width: $xle-more) {
+            left: -436px;
+            width: 173%;
+            margin-top: -206px;
+        }
+    }
+}
+
+.section-partners-logo {
+    padding: 30px 0;
+
+    @media (min-width: $lg) {
+        padding: 49px 0 30px;
+    }
+
+    @media (min-width: $xle-more) {
+        padding: 174px 0 108px;
+    }
+
+    .row {
+        @media (min-width: $md) {
+            justify-content: center;
+        }
+
+        @media (min-width: $lg) {
+            justify-content: normal;
+        }
+    }
+
+    .logo-content {
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+
+        @media (min-width: $md) {
+            margin-bottom: 38px;
+        }
+
+        @media (min-width: $xle) {
+            text-align: left;
+        }
+
+        img {
+            width: 102px;
+            height: 112px;
+
+            @media (min-width: $lg) {
+                width: 94px;
+                height: 111px;
+            }
+        }
+
+        .title {
+            margin: 15px 0 0;
+            font-size: 1.6rem;
+
+            @media (min-width: $lg) {
+                font-size: 1.4rem;
+                line-height: 1.8rem;
+            }
+
+            @media (min-width: $xle) {
+                text-align: left;
+            }
+        }
+
+        span {
+            display: block;
+            font-weight: normal;
+            font-size: 1.6rem;
+
+            @media (min-width: $lg) {
+                font-size: 1.2rem;
+            }
+
+            @media (min-width: $xle) {
+                text-align: left;
+                font-size: 1.6rem;
+            }
+                     @media (min-width: $xle) and (max-width:$xle-more) {
+      font-size: 1.3rem;
+      line-height:1.8rem;
+    }
+        }
+    }
+
+    .logo-size {
+        img {
+            @media (min-width: $lg) {
+                width: 100px;
+            }
+        }
+    }
+
+    .logo-txt-content {
+        text-align: center;
+        margin: 20px 0 20px;
+
+        @media (min-width: $lg) {
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo-content {
+            @media (min-width: $lg) {
+                text-align: left;
+            }
+        }
+
+        span {
+            display: block;
+            font-weight: 500;
+            font-size: 3rem;
+            margin-bottom: 30px;
+
+            @media (min-width: $lg) {
+                line-height: 3rem;
+                font-size: 2.8rem;
+                margin-top: 16px;
+            }
+
+            @media (min-width: $xle-hd) {
+                font-size: 4rem;
+                line-height: 4.2rem;
+            }
+
+            br {
+                display: none;
+
+                @media (min-width: $lg) {
+                    display: inline;
+                }
+            }
+        }
+    }
+}

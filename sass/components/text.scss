@@ -1,0 +1,279 @@
+.text-editor {
+    font-size: 1.3rem !important;
+    color: #383737 !important;
+    font-weight: 300 !important;
+    line-height: 3rem !important;
+    font-family: 'anago', sans-serif !important;
+    margin-bottom: 46px;
+
+    @media screen and (min-width: $md) {
+        font-size: 1.5rem !important;
+        margin-bottom: 68px;
+    }
+
+    @media (min-width: $lg) {
+        line-height: 26px !important;
+    }
+
+    @media screen and (min-width: $xl) {
+        font-size: 1.6rem !important;
+    }
+
+    strong, b {
+        font-weight: 600;
+    }
+
+    h2, h3, h4, h5, h6 {
+        font-size: 1.4rem !important;
+        line-height: 2.4rem !important;
+        font-weight: 600;
+        font-family: 'anago', sans-serif !important;
+        margin-bottom: 10px;
+        color: $native-color;
+
+        @media (min-width: $lg) {
+            font-size: 1.5rem !important;
+            font-weight: 700 !important;
+            line-height: 2.4rem !important;
+        }
+
+        @media (min-width: $xl) {
+            font-size: 1.5rem !important;
+            font-weight: 700 !important;
+            line-height: 2.4rem !important;
+            font-family: 'anago', sans-serif !important;
+        }
+    }
+
+    h2 {
+        font-size: 1.6rem !important;
+
+        @media (min-width: $lg) {
+            font-size: 1.8rem !important;
+            line-height: 2.4rem !important;
+        }
+
+        @media (min-width: $xl) {
+            font-size: 2.2rem !important;
+            line-height: 2.5rem !important;
+        }
+    }
+
+    h3 {
+        font-size: 1.5rem !important;
+
+        @media (min-width: $lg) {
+            font-size: 1.5rem !important;
+            line-height: 2.3rem !important;
+        }
+
+        @media (min-width: $xl) {
+            font-size: 1.8rem !important;
+            line-height: 2.4rem !important;
+        }
+    }
+
+    h4 {
+        font-size: 1.4rem !important;
+
+        @media (min-width: $lg) {
+            font-size: 1.6rem !important;
+            line-height: 2.2rem !important;
+        }
+
+        @media (min-width: $xl) {
+            font-size: 1.9rem !important;
+            line-height: 2.3rem !important;
+        }
+    }
+
+    p {
+        margin-bottom: 20px;
+        font-family: 'anago', sans-serif !important;
+        font-size: 1.4rem !important;
+        color: $native-color !important;
+        font-weight: normal !important;
+        line-height: 2.4rem !important;
+
+        @media screen and (min-width: $md) {
+            font-size: 1.5rem !important;
+        }
+
+        @media (min-width: $lg) {
+            line-height: 26px !important;
+        }
+
+        @media screen and (min-width: $lg) {
+            font-size: 1.6rem !important;
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 25px 0;
+        padding: 0 0 0 15px;
+        font-family: 'anago', sans-serif !important;
+
+        @media screen and (min-width: $xl) {
+            padding: 0 0 0 30px;
+        }
+
+        li {
+            font-size: 1.4rem !important;
+            line-height: 2.4rem !important;
+            position: relative;
+            color: $native-color !important;
+            font-weight: normal !important;
+
+            @media screen and (min-width: $md) {
+                font-size: 1.5rem !important;
+            }
+
+            @media (min-width: $lg) {
+                line-height: 26px !important;
+            }
+
+            @media screen and (min-width: $lg) {
+                font-size: 1.6rem !important;
+            }
+        }
+
+        li:before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            position: relative;
+            display: inline-block;
+            margin-right: 15px;
+            background: $native-color;
+            border-radius: 50%;
+            top: -2px;
+        }
+    }
+
+    ol {
+        margin: 25px 0;
+        padding: 0 0 0 15px;
+
+        li:before {
+            display: none;
+        }
+    }
+
+    a {
+        font-size: 1.4rem !important;
+        color: $native-hover !important;
+        font-family: 'anago', sans-serif !important;
+        color: $native-hover !important;
+        font-weight: 300 !important;
+        line-height: 2.4rem !important;
+
+        @media screen and (min-width: $md) {
+            font-size: 1.5rem !important;
+        }
+
+        @media (min-width: $lg) {
+            line-height: 26px !important;
+        }
+
+        @media screen and (min-width: $lg) {
+            font-size: 1.6rem !important;
+        }
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+
+    .btn-main {
+        color: #fff !important;
+    }
+
+    img {
+        margin: 30px 30px 30px 0px;
+        display: block;
+        max-width: 100%;
+      
+    }
+
+    table {
+        margin: 0px 0 20px;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+
+        //  display: block;
+        border-collapse: collapse;
+        background-color: transparent;
+
+        thead {
+            th {
+                font-size: 1.7rem !important;
+                font-weight: 600 !important;
+                line-height: 1.9rem !important;
+                font-family: $font-primary !important;
+                color: $native-color;
+                vertical-align: middle !important;
+                text-align: center;
+
+                //  border-right: 1px solid  #e0e3eb;
+                border-bottom: 3px solid  #e0e3eb;
+                border-top: 0 !important;
+
+                // border-top: 2px solid  #e0e3eb;
+                padding: 20px 18px !important;
+                text-align: center;
+
+                @media (max-width: $lg) {
+                    font-size: 1.4rem !important;
+                }
+            }
+
+            th:last-of-type {
+                border-right: 0;
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    @media (max-width: $lg) {
+                        font-size: 1.6rem !important;
+                    }
+
+                    @media (min-width: $lg) {
+                        line-height: 26px !important;
+                    }
+
+                    font-size: 1.6rem;
+                    font-weight: 300;
+                    text-align: center;
+                    vertical-align: middle !important;
+
+                    //  line-height: 1.8rem !important;
+                    // border-right: 1px solid  #e0e3eb;
+                    border-bottom: 1px solid  #e0e3eb;
+                    font-family: $font-primary !important;
+                    padding: 20px 18px !important;
+
+                    b {
+                        color: $native-tertiary-color;
+                        font-weight: 600 !important;
+                        display: block;
+                    }
+                }
+
+                td:first-of-type {
+                    text-align: left;
+                    padding-left: 0 !important;
+                }
+
+                td:last-of-type {
+                    border-right: 0;
+                    padding-right: 0 !important;
+                }
+            }
+        }
+    }
+}

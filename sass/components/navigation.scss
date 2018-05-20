@@ -1,0 +1,144 @@
+.header-main {
+    &__nav {
+        display: none;
+        position: fixed;
+        background: #fff;
+        left: 0;
+        right: 0;
+
+        // top: 0;
+       top: 61px;
+        padding: 0px;
+        z-index: 0;
+
+        @media (min-width: $lg) {
+            display: block !important;
+            margin-top: 0;
+            top:0;
+            position: relative;
+            right: auto;
+            left: auto;
+            height: 100%;
+        }
+
+        &__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            @media (min-width: $lg) {
+                height: 100%;
+            }
+
+            li {
+                display: block;
+                border-bottom: 1px solid rgba(204, 204, 204, 0.231372549);
+
+                @media (min-width: $lg) {
+                    display: inline-block;
+                    border: 0;
+                    margin-right: 15px;
+                    height: 100%;
+                }
+
+                @media (min-width: $xle) {
+                    margin-right: 41px;
+                }
+
+                a {
+                    display: block;
+                    padding: 5px 15px;
+                    max-width: 540px;
+                    color: $native-secondary-color;
+                    font-weight: 700;
+                    font-size: 1.3rem;
+                    text-transform: uppercase;
+                    letter-spacing: $letter-50;
+
+                    @media (min-width: $sm) {
+                        margin: 0 auto;
+                        padding: 5px 0;
+                    }
+
+                    @media (min-width: 768px) {
+                        max-width: 692px;
+                    }
+
+                    @media (min-width: $lg) {
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        padding: 0;
+                        position: relative;
+                    }
+
+                    @media (min-width: $xle) {
+                        letter-spacing: 1.1px;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        color: $native-hover;
+                    }
+                }
+
+               
+            }
+            li.active{
+            	a{
+            		 color: $native-hover;
+            	}
+            	
+            }
+
+            li:last-of-type {
+                @media (min-width: $lg) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.header-main.header-main--sub{
+    .header-main__nav {
+        li{
+             a:hover:after,
+                a:focus:after {
+                    content: "";
+                    background: $native-hover;
+                    height: 5px;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    display: none;
+
+                    @media (min-width: $lg) {
+                        display: flex;
+                    }
+                }
+        }
+         li.active{
+                a{
+                     color: $native-hover;
+                }
+                  a::after {
+                    content: "";
+                    background: $native-hover;
+                    height: 5px;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                   // display: none;
+
+                    @media (min-width: $lg) {
+                        display: flex;
+                    }
+                }
+            }
+    }
+} 
