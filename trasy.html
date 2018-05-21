@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="pl">
 
-    <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Portal rowerowy</title>
@@ -10,312 +10,311 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#279237">
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-	<link rel="manifest" href="favicons/site.webmanifest">
-	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#279237">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#279237">
 
     <link rel="stylesheet" href="https://use.typekit.net/etz7ozc.css">
-<link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
 
     <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
+    <link rel="stylesheet" href="css/leaflet.css">
 </head>
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
 
-    <body>
 
-        <div class="pageOverlay"></div>
-        <header class="header-main header-main--sub">
-            
-	<div class="container-fluid fixed-top">
-		<div class="container">
-			<a href="index.html" class="header-main__logo" title="Przejdź do strony głównej"><img src="img/logo_portalrowerowy.svg"  alt="Średzki portal rowerowy - logo"></a>
-			<button type="button" class="header-main__nav-toggle" id="nav-toggle"><span class="icon icon-menu" aria-label="Menu"></span></button>
-			<nav class="header-main__nav" id="main-nav" role="navigation">
-				<ul class="header-main__nav__list">
-					<li><a href="trasy.html">Mapa rowerowa</a></li>
-					<li><a href="projekt.html">O projekcie</a></li>
-					<li><a href="aktualnosci.html">Aktualności</a></li>
-					<li><a href="powiat.html">O powiecie</a></li>
-					<li><a href="zabytki.html">Przyroda i zabytki</a></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
+<body>
 
-	 
+    <div class="pageOverlay"></div>
+    <header class="header-main header-main--sub">
+
+        <div class="container-fluid fixed-top">
             <div class="container">
-                <nav class="breadcrumbs">
-                    <ul class="breadcrumbs__list">
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="index.html" itemprop="item">Start</a></li>
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="lista.html" itemprop="item">Trasy rowerowe</a></li>
+                <a href="index.html" class="header-main__logo" title="Przejdź do strony głównej"><img src="img/logo_portalrowerowy.svg"  alt="Średzki portal rowerowy - logo"></a>
+                <button type="button" class="header-main__nav-toggle" id="nav-toggle"><span class="icon icon-menu" aria-label="Menu"></span></button>
+                <nav class="header-main__nav" id="main-nav" role="navigation">
+                    <ul class="header-main__nav__list">
+                        <li><a href="trasy.html">Mapa rowerowa</a></li>
+                        <li><a href="projekt.html">O projekcie</a></li>
+                        <li><a href="aktualnosci.html">Aktualności</a></li>
+                        <li><a href="powiat.html">O powiecie</a></li>
+                        <li><a href="zabytki.html">Przyroda i zabytki</a></li>
                     </ul>
                 </nav>
             </div>
-        </header>
+        </div>
 
 
-        <main class="main main--sub">
-            <div class="container">
-                 <header class="header-section header-section--sub">
-                     <h1 class="primary-heading primary-color">Trasy rowerowe</h1>
-                     <p class="description">Na terenie nasze powiatu obecnie znajduja się 3 trasy rowerowe rekreacyjne. Zwiedzając można odwiedzić około 30 obiektów oraz 3 zbiorniki wodne. Zachęcamy do odkrywania naszego powiatu.</p>
-                 </header>
+        <div class="container">
+            <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="index.html" itemprop="item">Start</a></li>
+                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="lista.html" itemprop="item">Trasy rowerowe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="main main--sub">
+        <div class="container">
+            <header class="header-section header-section--sub">
+                <h1 class="primary-heading primary-color">Trasy rowerowe</h1>
+                <p class="description">Na terenie nasze powiatu obecnie znajduja się 3 trasy rowerowe rekreacyjne. Zwiedzając można odwiedzić około 30 obiektów oraz 3 zbiorniki wodne. Zachęcamy do odkrywania naszego powiatu.</p>
+            </header>
+        </div>
+        <section class="section-map-route section-map-route--sub mt-0">
+            <div class="map-route-markers">
+                <ul class="map-route-markers__list">
+                    <li>
+                        <div class="icon-content">
+                            <span class="span icon icon-maps-and-flags"></span>
+                            <span class="units">1</span>
+                        </div>
+                        <span class="title">Rowerowy Szlak Odry</span>
+                        <div class="route-details map-infoWindow">
+
+                            <div class="map-infoWindow__content">
+                                <div class="content-item">
+                                    <span class="icon icon-double-arrow" aria-hidden="true"></span>
+                                    <span class="txt">256km</span>
+                                </div>
+                                <div class="content-item">
+                                    <span class="icon icon-camera" aria-hidden="true"></span>
+                                    <span class="txt">3 atrakcje</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-fill">Szczegóły</button>
+                    </li>
+                    <li>
+                        <div class="icon-content">
+                            <span class="span icon icon-maps-and-flags"></span>
+                            <span class="units">1</span>
+                        </div>
+                        <span class="title">Rowerowy Szlak Odry</span>
+                        <div class="route-details map-infoWindow">
+
+                            <div class="map-infoWindow__content">
+                                <div class="content-item">
+                                    <span class="icon icon-double-arrow" aria-hidden="true"></span>
+                                    <span class="txt">256km</span>
+                                </div>
+                                <div class="content-item">
+                                    <span class="icon icon-camera" aria-hidden="true"></span>
+                                    <span class="txt">3 atrakcje</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-fill">Szczegóły</button>
+                    </li>
+                    <li>
+                        <div class="icon-content">
+                            <span class="span icon icon-maps-and-flags"></span>
+                            <span class="units">1</span>
+                        </div>
+                        <span class="title">Rowerowy Szlak Odry</span>
+                        <div class="route-details map-infoWindow">
+
+                            <div class="map-infoWindow__content">
+                                <div class="content-item">
+                                    <span class="icon icon-double-arrow" aria-hidden="true"></span>
+                                    <span class="txt">256km</span>
+                                </div>
+                                <div class="content-item">
+                                    <span class="icon icon-camera" aria-hidden="true"></span>
+                                    <span class="txt">3 atrakcje</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-fill">Szczegóły</button>
+                    </li>
+                    <li>
+                        <div class="icon-content">
+                            <span class="span icon icon-maps-and-flags"></span>
+                            <span class="units">1</span>
+                        </div>
+                        <span class="title">Rowerowy Szlak Odry</span>
+                        <div class="route-details map-infoWindow">
+
+                            <div class="map-infoWindow__content">
+                                <div class="content-item">
+                                    <span class="icon icon-double-arrow" aria-hidden="true"></span>
+                                    <span class="txt">256km</span>
+                                </div>
+                                <div class="content-item">
+                                    <span class="icon icon-camera" aria-hidden="true"></span>
+                                    <span class="txt">3 atrakcje</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-fill">Szczegóły</button>
+                    </li>
+                    <li>
+                        <div class="icon-content">
+                            <span class="span icon icon-maps-and-flags"></span>
+                            <span class="units">1</span>
+                        </div>
+                        <span class="title">Rowerowy Szlak Odry</span>
+                        <div class="route-details map-infoWindow">
+
+                            <div class="map-infoWindow__content">
+                                <div class="content-item">
+                                    <span class="icon icon-double-arrow" aria-hidden="true"></span>
+                                    <span class="txt">256km</span>
+                                </div>
+                                <div class="content-item">
+                                    <span class="icon icon-camera" aria-hidden="true"></span>
+                                    <span class="txt">3 atrakcje</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-fill">Szczegóły</button>
+                    </li>
+                </ul>
             </div>
-            <section class="section-map-route section-map-route--sub mt-0">
-                <div class="map-route-markers">
-                    <ul class="map-route-markers__list">
-                        <li>
-                            <div class="icon-content">
-                                <span class="span icon icon-maps-and-flags"></span>
-                                <span class="units">1</span>
-                            </div>
-                            <span class="title">Rowerowy Szlak Odry</span>
-                            <div class="route-details map-infoWindow">
-                                
-                                <div class="map-infoWindow__content">
-                                    <div class="content-item">
-                                        <span class="icon icon-double-arrow" aria-hidden="true"></span>
-                                        <span class="txt">256km</span>
-                                    </div>
-                                    <div class="content-item">
-                                        <span class="icon icon-camera" aria-hidden="true"></span>
-                                        <span class="txt">3 atrakcje</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <button type="button" class="btn-fill">Szczegóły</button>
-                        </li>
-                        <li>
-                            <div class="icon-content">
-                                <span class="span icon icon-maps-and-flags"></span>
-                                <span class="units">1</span>
-                            </div>
-                            <span class="title">Rowerowy Szlak Odry</span>
-                            <div class="route-details map-infoWindow">
-                                
-                                <div class="map-infoWindow__content">
-                                    <div class="content-item">
-                                        <span class="icon icon-double-arrow" aria-hidden="true"></span>
-                                        <span class="txt">256km</span>
-                                    </div>
-                                    <div class="content-item">
-                                        <span class="icon icon-camera" aria-hidden="true"></span>
-                                        <span class="txt">3 atrakcje</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <button type="button" class="btn-fill">Szczegóły</button>
-                        </li>
-                        <li>
-                            <div class="icon-content">
-                                <span class="span icon icon-maps-and-flags"></span>
-                                <span class="units">1</span>
-                            </div>
-                            <span class="title">Rowerowy Szlak Odry</span>
-                            <div class="route-details map-infoWindow">
-                                
-                                <div class="map-infoWindow__content">
-                                    <div class="content-item">
-                                        <span class="icon icon-double-arrow" aria-hidden="true"></span>
-                                        <span class="txt">256km</span>
-                                    </div>
-                                    <div class="content-item">
-                                        <span class="icon icon-camera" aria-hidden="true"></span>
-                                        <span class="txt">3 atrakcje</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <button type="button" class="btn-fill">Szczegóły</button>
-                        </li>
-                         <li>
-                            <div class="icon-content">
-                                <span class="span icon icon-maps-and-flags"></span>
-                                <span class="units">1</span>
-                            </div>
-                            <span class="title">Rowerowy Szlak Odry</span>
-                            <div class="route-details map-infoWindow">
-                                
-                                <div class="map-infoWindow__content">
-                                    <div class="content-item">
-                                        <span class="icon icon-double-arrow" aria-hidden="true"></span>
-                                        <span class="txt">256km</span>
-                                    </div>
-                                    <div class="content-item">
-                                        <span class="icon icon-camera" aria-hidden="true"></span>
-                                        <span class="txt">3 atrakcje</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <button type="button" class="btn-fill">Szczegóły</button>
-                        </li>
-                         <li>
-                            <div class="icon-content">
-                                <span class="span icon icon-maps-and-flags"></span>
-                                <span class="units">1</span>
-                            </div>
-                            <span class="title">Rowerowy Szlak Odry</span>
-                            <div class="route-details map-infoWindow">
-                                
-                                <div class="map-infoWindow__content">
-                                    <div class="content-item">
-                                        <span class="icon icon-double-arrow" aria-hidden="true"></span>
-                                        <span class="txt">256km</span>
-                                    </div>
-                                    <div class="content-item">
-                                        <span class="icon icon-camera" aria-hidden="true"></span>
-                                        <span class="txt">3 atrakcje</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <button type="button" class="btn-fill">Szczegóły</button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="map-infoWindow map-infoWindow--placeholders"> <!-- .map-infoWindowplaceholders remove class if in maps -->
-                    <span>Rowerowy Szlak Odry</span>
-                    <div class="map-infoWindow__content">
-                        <div class="content-item">
-                            <span class="icon icon-double-arrow" aria-hidden="true"></span>
-                            <span class="txt">256km</span>
-                        </div>
-                        <div class="content-item">
-                            <span class="icon icon-camera" aria-hidden="true"></span>
-                            <span class="txt">3 atrakcje</span>
-                        </div>
+            <div class="map-infoWindow map-infoWindow--placeholders">
+                <!-- .map-infoWindowplaceholders remove class if in maps -->
+                <span>Rowerowy Szlak Odry</span>
+                <div class="map-infoWindow__content">
+                    <div class="content-item">
+                        <span class="icon icon-double-arrow" aria-hidden="true"></span>
+                        <span class="txt">256km</span>
+                    </div>
+                    <div class="content-item">
+                        <span class="icon icon-camera" aria-hidden="true"></span>
+                        <span class="txt">3 atrakcje</span>
                     </div>
                 </div>
-                <div id="map-route"></div>
-            </section>
-            <section class="section-partners-logo">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-lg-3 col-lg-custom-1">
-                            <a href="#" target="_blank" class="logo-content">
+            </div>
+            <div id="map-route"></div>
+        </section>
+        <section class="section-partners-logo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-lg-custom-1">
+                        <a href="#" target="_blank" class="logo-content">
                                 <img src="img/logos/powiat_średzki.svg" alt="Powiat średzki - logo">
                                 <h3 class="title"><b>Powiat Średzki</b></h3>
                                 <span>www.powiat-sredzki.pl</span>
                             </a>
+                    </div>
+                    <div class="col-12 logo-txt-content col-lg-custom-2">
+                        <div class="logo-content">
+                            <span>Gminy<br> partnerskie</span>
                         </div>
-                        <div class="col-12 logo-txt-content col-lg-custom-2">
-                            <div class="logo-content">
-                                <span>Gminy<br> partnerskie</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-3 col-lg-custom-1">
-                            <a href="#" target="_blank" class="logo-content logo-size">
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-3 col-lg-custom-1">
+                        <a href="#" target="_blank" class="logo-content logo-size">
                                 <img src="img/logos/Środa_Śląska.svg" alt="Środa Śląska - logo">
                                 <h3 class="title"><b>Środa Śląska</b></h3>
                                 <span>www.srodaslaska.pl</span>
                             </a>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-3 col-lg-custom-1">
-                            <a href="#" target="_blank" class="logo-content">
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-3 col-lg-custom-1">
+                        <a href="#" target="_blank" class="logo-content">
                                 <img src="img/logos/gmina_Kostomłoty.svg" alt="Gmina Udanin - logo">
                                 <h3 class="title"><b>Gmina Kostomłoty</b></h3>
                                 <span>www.kostomloty.pl</span>
                             </a>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-3 col-lg-custom-1">
-                            <a href="#" target="_blank" class="logo-content">
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-3 col-lg-custom-1">
+                        <a href="#" target="_blank" class="logo-content">
                                 <img src="img/logos/gmina_Udanin.svg" alt="Gmina Udanin - logo">
                                 <h3 class="title"><b>Gmina Udanin</b></h3>
                                 <span>www.udanin.pl</span>
                             </a>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-3 col-lg-custom-1">
-                            <a href="#" target="_blank" class="logo-content">
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-3 col-lg-custom-1">
+                        <a href="#" target="_blank" class="logo-content">
                                 <img src="img/logos/gmina_Malczyce.svg" alt="Gmina Malczyce - logo">
                                 <h3 class="title"><b>Gmina Malczyce</b></h3>
                                 <span>www.malczyce.pl</span>
                             </a>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-3 col-lg-custom-1 col-lg-custom-1-last">
-                            <a href="#" target="_blank" class="logo-content">
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-3 col-lg-custom-1 col-lg-custom-1-last">
+                        <a href="#" target="_blank" class="logo-content">
                                 <img src="img/logos/gmina_Miękinia.svg" alt="Gmina Miękinia - logo">
                                 <h3 class="title"><b>Gmina Miękinia</b></h3>
                                 <span>www.miekinia.pl</span>
                             </a>
-                        </div>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
+    </main>
 
-        <footer class="footer-main">
-            <div class="container">
-	<div class="row">
-		<div class="col-12 col-md-4 col-lg-footer-1">
-			<nav class="footer-main__nav">
-				<h5 class="footer-main__nav__heading">Serwis</h5>
-				<ul class="footer-main__nav__list">
-					<li><a href="mapa.html">Mapa rowerowa</a></li>
-					<li><a href="trasy.html">Trasy rowerowe</a></li>
-					<li><a href="aktualnosci.html">Aktualności</a></li>
-					<li><a href="zabytki.html">Przyroda i zabytki</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="col-12 col-md-4 col-lg-footer-1">
-			<nav class="footer-main__nav">
-				<h5 class="footer-main__nav__heading">Informacje</h5>
-				<ul class="footer-main__nav__list">
-					<li><a href="kontakt.html">Kontakt</a></li>
-					<li><a href="index.html">Polityka prywatności</a></li>
-					<li><a href="index.html">Mapa serwisu</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="col-12 col-md-4 col-lg-footer-1">
-			<nav class="footer-main__nav">
-				<h5 class="footer-main__nav__heading">Kontakt</h5>
-				<ul class="footer-main__nav__list">
-					<li><a href="tel:+44 345 678 903">+44 345 678 903</a></li>
-					<li><a href="mailto:rowerowy@powiat-sredzki.pl">rowerowy@powiat-sredzki.pl</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="col-12 col-md-12 col-lg-footer-2">
-			<div class="footer-main__logo">
-				<img src="img/logos/logo_ue.svg" class="img-fluid" alt="">
-			</div>
-		</div>
-	</div>
-	<div class="row footer-main__copyrights">
-	 	<div class="col-12">
-            <hr class="line-styles">
-	 	</div>
-		<div class="col-12 col-sm-6">
-			<span class="copyrights">© Rowerowy Powiat Średzki 2018. Wszelkie prawa zasteżone.</span>
-		</div>
-		<div class="col-12 col-sm-6">
-			<span class="authors">Realizacja <a href="http://www.novapr.pl" target="_blank">NovaPR</a></span>
-		</div>
-	</div>
-</div>
-        </footer>
+    <footer class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-footer-1">
+                    <nav class="footer-main__nav">
+                        <h5 class="footer-main__nav__heading">Serwis</h5>
+                        <ul class="footer-main__nav__list">
+                            <li><a href="mapa.html">Mapa rowerowa</a></li>
+                            <li><a href="trasy.html">Trasy rowerowe</a></li>
+                            <li><a href="aktualnosci.html">Aktualności</a></li>
+                            <li><a href="zabytki.html">Przyroda i zabytki</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 col-md-4 col-lg-footer-1">
+                    <nav class="footer-main__nav">
+                        <h5 class="footer-main__nav__heading">Informacje</h5>
+                        <ul class="footer-main__nav__list">
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                            <li><a href="index.html">Polityka prywatności</a></li>
+                            <li><a href="index.html">Mapa serwisu</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 col-md-4 col-lg-footer-1">
+                    <nav class="footer-main__nav">
+                        <h5 class="footer-main__nav__heading">Kontakt</h5>
+                        <ul class="footer-main__nav__list">
+                            <li><a href="tel:+44 345 678 903">+44 345 678 903</a></li>
+                            <li><a href="mailto:rowerowy@powiat-sredzki.pl">rowerowy@powiat-sredzki.pl</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 col-md-12 col-lg-footer-2">
+                    <div class="footer-main__logo">
+                        <img src="img/logos/logo_ue.svg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-main__copyrights">
+                <div class="col-12">
+                    <hr class="line-styles">
+                </div>
+                <div class="col-12 col-sm-6">
+                    <span class="copyrights">© Rowerowy Powiat Średzki 2018. Wszelkie prawa zasteżone.</span>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <span class="authors">Realizacja <a href="http://www.novapr.pl" target="_blank">NovaPR</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-            <script src="js/vendor/scripts.min.js"></script>
+    <script src="js/vendor/scripts.min.js"></script>
     <script src="js/plugins.min.js"></script>
-        <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js">i</script>
-        <script>
-            var layer = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-             attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
-            });
-            
-            
-            var map = new L.Map("map-route", {
-                center: new L.LatLng(51.1333,17.0532),
-                zoom: 10
-            });
-            
-            
-            map.addLayer(layer);                                 
-            
-            
-            
-           
-        </script>
+    <script src="js/leaflet.js"></script>
+    <script>
+        var layer = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
+        });
 
-    </body>
+
+        var map = new L.Map("map-route", {
+            center: new L.LatLng(51.1333, 17.0532),
+            zoom: 10
+        });
+
+
+        map.addLayer(layer);
+    </script>
+
+</body>
+
 </html>
